@@ -1,4 +1,3 @@
-// import React, { useState } from 'react'
 import { StyleSheet } from 'react-native'
 import { Box } from 'native-base'
 import React from 'react'

@@ -2,7 +2,7 @@ import { RootStackParamList } from '@/types'
 import { useNavigation } from '@react-navigation/native'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { View } from 'react-native'
-import { Box, Text, Button } from 'native-base'
+import { Text, Button } from 'native-base'
 
 const Home = () => {
   const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList, 'Home'>>()
