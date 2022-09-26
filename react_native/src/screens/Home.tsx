@@ -2,7 +2,7 @@ import { RootStackParamList } from '@/types'
 import { useNavigation } from '@react-navigation/native'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { View } from 'react-native'
-import { Button, Text } from 'react-native-elements'
+import { Box, Text, Button } from 'native-base'
 
 const Home = () => {
   const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList, 'Home'>>()
@@ -10,7 +10,8 @@ const Home = () => {
   return (
     <View>
       <Text>ホーム画面</Text>
-      <Button title="ユーザー" onPress={() => navigation.navigate('User')} />
+      <Button onPress={() => navigation.navigate('User')}>ユーザー</Button>
+      <Button onPress={() => navigation.navigate('Game')}>◯×ゲーム</Button>
     </View>
   )
 }
